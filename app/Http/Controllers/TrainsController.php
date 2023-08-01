@@ -9,7 +9,7 @@ use App\Models\Train;
 class TrainsController extends Controller
 {
     public function index(){
-        $trains = Train::where('data_partenza', '>=', now())->get();
+        $trains = Train::all();
         return view('welcome', compact('trains'));
     }
 }

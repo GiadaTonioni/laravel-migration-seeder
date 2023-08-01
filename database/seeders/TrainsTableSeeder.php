@@ -34,6 +34,7 @@ class TrainsTableSeeder extends Seeder
             $train->tempo_ritardo = $faker->time();
             $train->cancellato = $faker->boolean();
 
+            $train->save();
         }
     }
 }
